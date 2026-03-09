@@ -1,167 +1,122 @@
 # IPLTEAM_project
-IPL_teams = {}
-MI_team=[
- {"PN":"Rohit Sharma","JS":45,"WICKETS":15,"RUNS":6211,"BALLS":4750,"STRIKE_RATE":130.7,"AVERAGE":29.5,"FIFTIES":42,"ROLE":"BATTER","AGE":36},
+🏏 Python IPL Teams Data Project
 
- {"PN":"Hardik Pandya","JS":33,"WICKETS":53,"RUNS":2309,"BALLS":1560,"STRIKE_RATE":148.0,"AVERAGE":28.5,"FIFTIES":10,"ROLE":"ALLROUNDER","AGE":30},
+A beginner-friendly Python program that demonstrates how to store and manage complex data using dictionaries and lists. This project organizes IPL teams and player statistics using Python data structures and prints the information in different ways.
 
- {"PN":"Jasprit Bumrah","JS":93,"WICKETS":165,"RUNS":56,"BALLS":70,"STRIKE_RATE":80.0,"AVERAGE":7.0,"FIFTIES":0,"ROLE":"BOWLER","AGE":30},
+✨ Why This Project?
 
- {"PN":"Suryakumar Yadav","JS":63,"WICKETS":0,"RUNS":3249,"BALLS":2140,"STRIKE_RATE":151.8,"AVERAGE":32.8,"FIFTIES":21,"ROLE":"BATTER","AGE":33},
+When working with real-world data, we often need to store multiple records with many attributes. Python’s dictionaries and lists are powerful tools for handling such structured data.
 
- {"PN":"Ishan Kishan","JS":32,"WICKETS":0,"RUNS":2324,"BALLS":1675,"STRIKE_RATE":138.7,"AVERAGE":28.6,"FIFTIES":15,"ROLE":"BATTER","AGE":25},
+This project helps beginners learn how to:
 
- {"PN":"Tilak Varma","JS":9,"WICKETS":0,"RUNS":1000,"BALLS":720,"STRIKE_RATE":138.8,"AVERAGE":39.0,"FIFTIES":6,"ROLE":"BATTER","AGE":21},
+Organize structured data
 
- {"PN":"Piyush Chawla","JS":11,"WICKETS":179,"RUNS":609,"BALLS":520,"STRIKE_RATE":117.1,"AVERAGE":12.4,"FIFTIES":0,"ROLE":"BOWLER","AGE":35},
+Work with nested dictionaries and lists
 
- {"PN":"Tim David","JS":85,"WICKETS":0,"RUNS":659,"BALLS":370,"STRIKE_RATE":178.1,"AVERAGE":30.0,"FIFTIES":1,"ROLE":"BATTER","AGE":27}
-]
+Access specific values from large datasets
 
-CSK_team = [
- {"PN":"MS Dhoni","JS":7,"WICKETS":0,"RUNS":5243,"BALLS":3812,"STRIKE_RATE":137.5,"AVERAGE":39.2,"FIFTIES":24,"ROLE":"WICKETKEEPER","AGE":42},
+Loop through complex data structures
 
- {"PN":"Ruturaj Gaikwad","JS":31,"WICKETS":0,"RUNS":2380,"BALLS":1735,"STRIKE_RATE":137.1,"AVERAGE":39.6,"FIFTIES":18,"ROLE":"BATTER","AGE":27},
+🚀 Features
 
- {"PN":"Ravindra Jadeja","JS":8,"WICKETS":157,"RUNS":2692,"BALLS":2060,"STRIKE_RATE":130.6,"AVERAGE":27.5,"FIFTIES":3,"ROLE":"ALLROUNDER","AGE":35},
+Stores 10 IPL teams with player statistics
 
- {"PN":"Moeen Ali","JS":18,"WICKETS":35,"RUNS":1162,"BALLS":845,"STRIKE_RATE":137.5,"AVERAGE":24.2,"FIFTIES":6,"ROLE":"ALLROUNDER","AGE":36},
+Uses nested dictionaries and lists
 
- {"PN":"Deepak Chahar","JS":90,"WICKETS":72,"RUNS":85,"BALLS":96,"STRIKE_RATE":88.5,"AVERAGE":8.5,"FIFTIES":0,"ROLE":"BOWLER","AGE":31},
+Displays all team names
 
- {"PN":"Shivam Dube","JS":70,"WICKETS":5,"RUNS":1106,"BALLS":720,"STRIKE_RATE":153.6,"AVERAGE":32.5,"FIFTIES":6,"ROLE":"ALLROUNDER","AGE":30},
+Prints player details for each team
 
- {"PN":"Devon Conway","JS":88,"WICKETS":0,"RUNS":924,"BALLS":654,"STRIKE_RATE":141.3,"AVERAGE":48.6,"FIFTIES":9,"ROLE":"BATTER","AGE":32},
+Accesses specific players from selected teams
 
- {"PN":"Maheesh Theekshana","JS":61,"WICKETS":35,"RUNS":15,"BALLS":20,"STRIKE_RATE":75.0,"AVERAGE":5.0,"FIFTIES":0,"ROLE":"BOWLER","AGE":24}
-]
+Shows how to iterate through structured datasets
 
-RCB_team = [
- {"PN":"Virat Kohli","JS":18,"WICKETS":4,"RUNS":7263,"BALLS":5580,"STRIKE_RATE":130.2,"AVERAGE":37.3,"FIFTIES":50,"ROLE":"BATTER","AGE":35},
+🧠 Concepts Covered
+1️⃣ Dictionaries
 
- {"PN":"Faf du Plessis","JS":13,"WICKETS":0,"RUNS":4133,"BALLS":2970,"STRIKE_RATE":139.1,"AVERAGE":34.7,"FIFTIES":33,"ROLE":"BATTER","AGE":39},
+Used to store data in key–value pairs.
 
- {"PN":"Glenn Maxwell","JS":32,"WICKETS":31,"RUNS":2771,"BALLS":1730,"STRIKE_RATE":160.1,"AVERAGE":26.1,"FIFTIES":18,"ROLE":"ALLROUNDER","AGE":35},
+Example:
 
- {"PN":"Mohammed Siraj","JS":73,"WICKETS":93,"RUNS":45,"BALLS":60,"STRIKE_RATE":75.0,"AVERAGE":7.5,"FIFTIES":0,"ROLE":"BOWLER","AGE":29},
+player = {"PN":"Rohit Sharma","RUNS":6211,"AGE":36}
+2️⃣ Lists
 
- {"PN":"Dinesh Karthik","JS":19,"WICKETS":0,"RUNS":4516,"BALLS":3210,"STRIKE_RATE":140.7,"AVERAGE":26.8,"FIFTIES":20,"ROLE":"WICKETKEEPER","AGE":38},
+Used to store multiple items in order.
 
- {"PN":"Rajat Patidar","JS":97,"WICKETS":0,"RUNS":799,"BALLS":520,"STRIKE_RATE":153.6,"AVERAGE":34.7,"FIFTIES":5,"ROLE":"BATTER","AGE":30}
-]
+Example:
 
-KKR_team = [
- {"PN":"Shreyas Iyer","JS":41,"WICKETS":0,"RUNS":3127,"BALLS":2450,"STRIKE_RATE":127.6,"AVERAGE":32.5,"FIFTIES":21,"ROLE":"BATTER","AGE":29},
+MI_team = [player1, player2, player3]
+3️⃣ Nested Data Structures
 
- {"PN":"Andre Russell","JS":12,"WICKETS":96,"RUNS":2262,"BALLS":1200,"STRIKE_RATE":188.5,"AVERAGE":29.7,"FIFTIES":10,"ROLE":"ALLROUNDER","AGE":35},
+This project combines lists inside dictionaries.
 
- {"PN":"Sunil Narine","JS":74,"WICKETS":163,"RUNS":1046,"BALLS":780,"STRIKE_RATE":134.1,"AVERAGE":16.2,"FIFTIES":1,"ROLE":"ALLROUNDER","AGE":35},
+Structure used:
 
- {"PN":"Rinku Singh","JS":35,"WICKETS":0,"RUNS":893,"BALLS":610,"STRIKE_RATE":146.4,"AVERAGE":37.2,"FIFTIES":4,"ROLE":"BATTER","AGE":26},
+IPL_teams
+   │
+   ├── Mumbai Indians
+   │      ├── Player 1
+   │      ├── Player 2
+   │
+   ├── Chennai Super Kings
+   │      ├── Player 1
+   │      ├── Player 2
+4️⃣ Loops
+Loop through team names
+for team in IPL_teams.keys():
+    print(team)
+Loop through teams and players
+for team, players in IPL_teams.items():
+    print(team)
+Loop through player details
+for player in players:
+    for key, value in player.items():
+        print(key, value)
+📊 Player Information Stored
 
- {"PN":"Nitish Rana","JS":27,"WICKETS":7,"RUNS":2594,"BALLS":1920,"STRIKE_RATE":135.0,"AVERAGE":28.3,"FIFTIES":18,"ROLE":"BATTER","AGE":29}
-]
+Each player record contains:
 
-RR_team = [
- {"PN":"Sanju Samson","JS":11,"WICKETS":0,"RUNS":3888,"BALLS":2840,"STRIKE_RATE":136.8,"AVERAGE":29.7,"FIFTIES":21,"ROLE":"WICKETKEEPER","AGE":29},
+Field	Description
+PN	Player Name
+JS	Jersey Number
+WICKETS	Total wickets
+RUNS	Total runs
+BALLS	Balls faced
+STRIKE_RATE	Batting strike rate
+AVERAGE	Batting average
+FIFTIES	Number of half-centuries
+ROLE	Player role
+AGE	Player age
+💻 Example Code Snippet
+for k, v in IPL_teams.items():
+    print("TEAM:", k)
 
- {"PN":"Jos Buttler","JS":63,"WICKETS":0,"RUNS":3223,"BALLS":2120,"STRIKE_RATE":152.0,"AVERAGE":38.8,"FIFTIES":19,"ROLE":"BATTER","AGE":33},
+    for player in v:
+        print(player["PN"])
 
- {"PN":"Yuzvendra Chahal","JS":3,"WICKETS":187,"RUNS":37,"BALLS":50,"STRIKE_RATE":74.0,"AVERAGE":6.1,"FIFTIES":0,"ROLE":"BOWLER","AGE":33},
+This code prints each team name and its players.
 
- {"PN":"Ravichandran Ashwin","JS":99,"WICKETS":171,"RUNS":739,"BALLS":640,"STRIKE_RATE":115.4,"AVERAGE":14.8,"FIFTIES":1,"ROLE":"ALLROUNDER","AGE":37},
+📊 Sample Output
+Mumbai Indians
+Chennai Super Kings
+Royal Challengers Bengaluru
+Kolkata Knight Riders
+Rajasthan Royals
+Delhi Capitals
+Sunrisers Hyderabad
+Punjab Kings
+Gujarat Titans
+Lucknow Super Giants
 
- {"PN":"Yashasvi Jaiswal","JS":64,"WICKETS":0,"RUNS":1172,"BALLS":760,"STRIKE_RATE":154.2,"AVERAGE":32.6,"FIFTIES":8,"ROLE":"BATTER","AGE":22}
-]
+Example player list:
 
-DC_team = [
- {"PN":"Rishabh Pant","JS":17,"WICKETS":0,"RUNS":2838,"BALLS":1920,"STRIKE_RATE":147.8,"AVERAGE":34.1,"FIFTIES":15,"ROLE":"WICKETKEEPER","AGE":26},
-
- {"PN":"David Warner","JS":31,"WICKETS":0,"RUNS":6397,"BALLS":4570,"STRIKE_RATE":140.0,"AVERAGE":41.2,"FIFTIES":61,"ROLE":"BATTER","AGE":37},
-
- {"PN":"Axar Patel","JS":20,"WICKETS":112,"RUNS":1468,"BALLS":1030,"STRIKE_RATE":142.5,"AVERAGE":24.9,"FIFTIES":3,"ROLE":"ALLROUNDER","AGE":30},
-
- {"PN":"Kuldeep Yadav","JS":23,"WICKETS":71,"RUNS":45,"BALLS":60,"STRIKE_RATE":75.0,"AVERAGE":7.5,"FIFTIES":0,"ROLE":"BOWLER","AGE":29}
-]
-
-SRH_team = [
- {"PN":"Aiden Markram","JS":4,"WICKETS":2,"RUNS":995,"BALLS":720,"STRIKE_RATE":138.2,"AVERAGE":32.1,"FIFTIES":5,"ROLE":"BATTER","AGE":29},
-
- {"PN":"Pat Cummins","JS":30,"WICKETS":45,"RUNS":379,"BALLS":280,"STRIKE_RATE":135.3,"AVERAGE":18.0,"FIFTIES":0,"ROLE":"ALLROUNDER","AGE":30},
-
- {"PN":"Heinrich Klaasen","JS":45,"WICKETS":0,"RUNS":993,"BALLS":620,"STRIKE_RATE":160.1,"AVERAGE":39.0,"FIFTIES":6,"ROLE":"WICKETKEEPER","AGE":32},
-
- {"PN":"Bhuvneshwar Kumar","JS":15,"WICKETS":170,"RUNS":300,"BALLS":350,"STRIKE_RATE":85.7,"AVERAGE":10.5,"FIFTIES":0,"ROLE":"BOWLER","AGE":34}
-]
-
-PBKS_team = [
- {"PN":"Shikhar Dhawan","JS":42,"WICKETS":4,"RUNS":6769,"BALLS":5200,"STRIKE_RATE":130.1,"AVERAGE":35.4,"FIFTIES":51,"ROLE":"BATTER","AGE":38},
-
- {"PN":"Sam Curran","JS":58,"WICKETS":42,"RUNS":883,"BALLS":620,"STRIKE_RATE":142.4,"AVERAGE":23.2,"FIFTIES":3,"ROLE":"ALLROUNDER","AGE":25},
-
- {"PN":"Arshdeep Singh","JS":2,"WICKETS":78,"RUNS":25,"BALLS":35,"STRIKE_RATE":71.4,"AVERAGE":5.0,"FIFTIES":0,"ROLE":"BOWLER","AGE":25},
-
- {"PN":"Liam Livingstone","JS":23,"WICKETS":11,"RUNS":828,"BALLS":520,"STRIKE_RATE":159.2,"AVERAGE":28.5,"FIFTIES":6,"ROLE":"ALLROUNDER","AGE":30}
-]
-
-GT_team = [
- {"PN":"Shubman Gill","JS":77,"WICKETS":0,"RUNS":3216,"BALLS":2290,"STRIKE_RATE":140.4,"AVERAGE":37.3,"FIFTIES":20,"ROLE":"BATTER","AGE":24},
-
- {"PN":"Hardik Pandya","JS":33,"WICKETS":53,"RUNS":2309,"BALLS":1560,"STRIKE_RATE":148.0,"AVERAGE":28.5,"FIFTIES":10,"ROLE":"ALLROUNDER","AGE":30},
-
- {"PN":"Rashid Khan","JS":19,"WICKETS":149,"RUNS":443,"BALLS":290,"STRIKE_RATE":152.7,"AVERAGE":14.3,"FIFTIES":0,"ROLE":"ALLROUNDER","AGE":25},
-
- {"PN":"Mohammed Shami","JS":11,"WICKETS":127,"RUNS":69,"BALLS":80,"STRIKE_RATE":86.2,"AVERAGE":9.5,"FIFTIES":0,"ROLE":"BOWLER","AGE":33}
-]
-
-LSG_team = [
- {"PN":"KL Rahul","JS":1,"WICKETS":0,"RUNS":4163,"BALLS":3040,"STRIKE_RATE":137.0,"AVERAGE":46.3,"FIFTIES":33,"ROLE":"WICKETKEEPER","AGE":31},
-
- {"PN":"Quinton de Kock","JS":12,"WICKETS":0,"RUNS":3157,"BALLS":2230,"STRIKE_RATE":141.6,"AVERAGE":31.9,"FIFTIES":23,"ROLE":"WICKETKEEPER","AGE":31},
-
- {"PN":"Marcus Stoinis","JS":17,"WICKETS":43,"RUNS":1472,"BALLS":990,"STRIKE_RATE":148.7,"AVERAGE":28.3,"FIFTIES":7,"ROLE":"ALLROUNDER","AGE":34},
-
- {"PN":"Ravi Bishnoi","JS":56,"WICKETS":63,"RUNS":25,"BALLS":30,"STRIKE_RATE":83.3,"AVERAGE":6.0,"FIFTIES":0,"ROLE":"BOWLER","AGE":24}
-]
-IPL_teams["Mumbai Indians"] = MI_team
-IPL_teams["Chennai Super Kings"] = CSK_team
-IPL_teams["Royal Challengers Bengaluru"] = RCB_team
-IPL_teams["Kolkata Knight Riders"] = KKR_team
-IPL_teams["Rajasthan Royals"] = RR_team
-IPL_teams["Delhi Capitals"] = DC_team
-IPL_teams["Sunrisers Hyderabad"] = SRH_team
-IPL_teams["Punjab Kings"] = PBKS_team
-IPL_teams["Gujarat Titans"] = GT_team
-IPL_teams["Lucknow Super Giants"] = LSG_team
-
-#print a whole team names.
-# for team in IPL_teams.keys():
-#     print(team)
-
-# #print a  whole team name one by one with space.
-# for team, players in IPL_teams.items():
-#     print("\nTEAM:", team)
-#     print("-"*40)
-
-#print a 
-# for player in players:
-#         for key, value in player.items():
-#             print(key, ":", value)
-#         print()
-
-
-#print only team 1
-print(PN["Mumbai Indians"][1])
-print(IPL_teams["Chennai Super Kings"][1])
-print(IPL_teams["Rajasthan Royals"][1])
-print(IPL_teams["Royal Challengers Bengaluru"][1])
-
-
-
-#print a whole team member
-# for k, v in IPL_teams.items():
-#     print("TEAM:", k)
-
-#     for player in v:
-#         print(player["PN"])
+TEAM: Mumbai Indians
+Rohit Sharma
+Hardik Pandya
+Jasprit Bumrah
+Suryakumar Yadav
+Ishan Kishan
+Tilak Varma
+Piyush Chawla
+Tim David
 
